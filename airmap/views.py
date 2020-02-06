@@ -1,17 +1,10 @@
-from django.shortcuts import render
-from django.http import JsonResponse
-from datetime import datetime
-from .models import Post, Monitor
 from django.views.decorators.csrf import csrf_exempt
 from djgeojson.fields import PointField
-
-default_geom = {
-  "type":"Point",
-  "coordinates":[
-    -1.5058208465576172,
-    48.15301133231325
-  ]
-}
+from django.shortcuts import render
+from .models import Post, Monitor
+from datetime import datetime
+from copy import deepcopy
+from django.http import HttpResponse, HttpResponseBadRequest, HttpResponseNotFound
 
 # Create your views here.
 
@@ -24,9 +17,8 @@ def update_reading(request):
     posts = Post.objects.all()
     response_data = {}
 
-    # print(Monitor.objects.all().last().id)
-
     if request.method == 'POST':
+        print (request.POST)
         if request.POST.get('monitor_id'): # If we received post data from a known existing monitor
             monitor_id = request.POST['monitor_id']
             latest_reading = request.POST['latest_reading']
@@ -43,10 +35,46 @@ def update_reading(request):
             monitor.save(update_fields=['latest_reading', 'latest_reading_datetime'])
 
         elif request.POST.get('latitude'): # If we received post data with 'latitude' indicating a new monitor
+            longitude = request.POST.get('longitude')
+            latitude = request.POST.get('latitude')
+
+            # Make a deep copy so as to not change an existing monitor
+            new_geom = deepcopy(Monitor.objects.all().last().geom)
+
+            new_geom['coordinates'][0] = longitude
+            new_geom['coordinates'][1] = latitude
+
             Monitor.objects.create(
-                geom=PointField(default=default_geom),
-                latest_reading=20,
-                latest_reading_datetime=datetime.now()
+                latest_reading=0,
+                latest_reading_datetime=datetime.now(),
+                geom=new_geom
+                # geom=PointField(default=default_geom)
             )
 
-    return render(request, 'airmap/update_reading.html', {'posts':posts})
+        else: # Not a recognised request
+            return HttpResponseBadRequest
+
+    return HttpResponse(None) # Return an empty HttpResponse.
+    # return render(request, 'airmap/update_reading.html', {'posts':posts})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

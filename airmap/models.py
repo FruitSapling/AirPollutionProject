@@ -1,6 +1,7 @@
 from django.contrib.gis.db import models
 # from django.contrib.gis.db.models import PointField
 from djgeojson.fields import PointField
+# from djgeojson.serializers import
 from django.utils import timezone
 
 default_geom = {
@@ -14,7 +15,6 @@ default_geom = {
 class Post (models.Model):
     title = models.CharField(max_length=50)
     description = models.TextField()
-
     def __str__(self):
         return self.title
 

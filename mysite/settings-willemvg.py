@@ -30,7 +30,7 @@ SECRET_KEY = 'f8e3gen08=5vipdhkvqow$(=(p$!(l=0_9oy%wo!x6!ja7mdn6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*'] # "localhost", "0.0.0.0", "172.20.10.3", "willemvg.local", '*'
+ALLOWED_HOSTS = []
 
 
 # Application definition
