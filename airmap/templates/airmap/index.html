@@ -18,8 +18,11 @@
 
 <script type="text/javascript">
 
+    var POOR_AQ_THRESHOLD = 40;
+    var GOOD_AQ_THRESHOLD = 15;
+
     function checkShouldBeRed(monitor) {
-        if (monitor.properties.latest_reading > 50) {
+        if (monitor.properties.latest_reading >= POOR_AQ_THRESHOLD) {
             return true;
         } else {
             return false;
@@ -27,7 +30,7 @@
     }
 
     function checkShouldBeGreen(monitor) {
-        if (monitor.properties.latest_reading < 15) {
+        if (monitor.properties.latest_reading <= GOOD_AQ_THRESHOLD) {
             return true;
         } else {
             return false;
@@ -35,7 +38,8 @@
     }
 
     function checkShouldBeYellow(monitor) {
-        if (monitor.properties.latest_reading > 15 && monitor.properties.latest_reading < 50) {
+        if (monitor.properties.latest_reading > GOOD_AQ_THRESHOLD
+            && monitor.properties.latest_reading < POOR_AQ_THRESHOLD) {
             return true;
         } else {
             return false;

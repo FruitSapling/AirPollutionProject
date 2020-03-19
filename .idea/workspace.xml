@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cb98515-2afc-4fa9-af8b-cc74e565d4df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/airmap/migrations/0012_monitor_mac_address.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/airmap/migrations/0013_auto_20200314_1656.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/airmap/results.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/airmap/tests/test_forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/airmap/tests/test_models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/results.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airmap/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/airmap/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airmap/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/airmap/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airmap/templates/airmap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/airmap/templates/airmap/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airmap/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/airmap/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airmap/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/airmap/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airmap/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/airmap/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +49,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1UExQbddsGo4uFfg5juJeu8HmrD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -53,7 +69,7 @@
       <recent name="$PROJECT_DIR$/airmap/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Django tests.Test: airmap.tests.test_models.MonitorTestCase">
+  <component name="RunManager" selected="Django tests.Test: airmap.tests.test_views.UpdateReadingsViewTest">
     <configuration name="Test: airmap.tests.test_models.MonitorTestCase" type="DjangoTestsConfigurationType" temporary="true">
       <module name="mysite" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -68,6 +84,46 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="TARGET" value="airmap.tests.test_models.MonitorTestCase" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: airmap.tests.test_views.UpdateReadingsViewTest" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="mysite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="airmap.tests.test_views.UpdateReadingsViewTest" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: airmap.tests.test_views.UpdateReadingsViewTest.test_view_rejects_invalid_header" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="mysite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="airmap.tests.test_views.UpdateReadingsViewTest.test_view_rejects_invalid_header" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
@@ -99,6 +155,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Django tests.Test: airmap.tests.test_views.UpdateReadingsViewTest" />
+        <item itemvalue="Django tests.Test: airmap.tests.test_views.UpdateReadingsViewTest.test_view_rejects_invalid_header" />
         <item itemvalue="Django tests.Test: airmap.tests.test_models.MonitorTestCase" />
       </list>
     </recent_temporary>
@@ -129,39 +187,60 @@
       <workItem from="1579703815933" duration="4445000" />
       <workItem from="1580232256003" duration="9348000" />
       <workItem from="1580985588838" duration="973000" />
+      <workItem from="1581162531670" duration="7513000" />
+      <workItem from="1582129148526" duration="564000" />
+      <workItem from="1582464812744" duration="3311000" />
+      <workItem from="1582797506712" duration="25000" />
+      <workItem from="1583085057468" duration="1553000" />
+      <workItem from="1583689381648" duration="2724000" />
+      <workItem from="1583928029192" duration="7604000" />
+      <workItem from="1584346403691" duration="2717000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1149" height="197" key="GridCell.Tab.0.bottom" timestamp="1580902990379">
+    <state width="1008" height="173" key="GridCell.Tab.0.bottom" timestamp="1584203952023">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1149" height="197" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1580902990379" />
-    <state width="1149" height="197" key="GridCell.Tab.0.center" timestamp="1580902990378">
+    <state width="1008" height="173" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1584203952023" />
+    <state width="1008" height="173" key="GridCell.Tab.0.center" timestamp="1584203952022">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1149" height="197" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1580902990378" />
-    <state width="1149" height="197" key="GridCell.Tab.0.left" timestamp="1580902990378">
+    <state width="1008" height="173" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1584203952022" />
+    <state width="1008" height="173" key="GridCell.Tab.0.left" timestamp="1584203952021">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1149" height="197" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1580902990378" />
-    <state width="1149" height="197" key="GridCell.Tab.0.right" timestamp="1580902990379">
+    <state width="1008" height="173" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1584203952021" />
+    <state width="1008" height="173" key="GridCell.Tab.0.right" timestamp="1584203952022">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1149" height="197" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1580902990379" />
+    <state width="1008" height="173" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1584203952022" />
     <state x="104" y="50" key="SettingsEditor" timestamp="1580828482185">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="104" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1580828482185" />
-    <state x="274" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1580985589811">
+    <state x="407" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1584367825404">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="274" y="244" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1580985589811" />
+    <state x="407" y="244" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1584367825404" />
+    <state x="582" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584620890856">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="582" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.777@0.23.1280.777" timestamp="1584620890856" />
+    <state x="420" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1584205448083">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="420" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1584205448083" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mysite$Test__airmap_tests_test_models_MonitorTestCase.coverage" NAME="Test: airmap.tests.test_models.MonitorTestCase Coverage Results" MODIFIED="1580832393469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/mysite$Test__airmap_tests_test_views_UpdateReadingsViewTest_test_view_rejects_invalid_header.coverage" NAME="Test: airmap.tests.test_views.UpdateReadingsViewTest.test_view_rejects_invalid_header Coverage Results" MODIFIED="1582555868861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/mysite$Test__airmap_tests_test_views_UpdateReadingsViewTest.coverage" NAME="Test: airmap.tests.test_views.UpdateReadingsViewTest Coverage Results" MODIFIED="1584197424358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
