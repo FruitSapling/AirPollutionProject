@@ -5,9 +5,6 @@ from datetime import datetime
 from copy import deepcopy
 from django.http import HttpResponse, HttpResponseBadRequest
 from django import forms
-import os
-
-# Create your views here.
 
 def IndexView(request):
     template_name = 'airmap/index.html'
@@ -17,7 +14,7 @@ def IndexView(request):
 def create_monitor(request):
     print("request look;")
     print(request)
-    #if request has longitude, latitude and mac_address headers, then valid req
+    # If request has longitude, latitude and mac_address headers, then it is a valid request
     if (request.POST.get('latitude')
             and request.POST.get('longitude')
             and request.POST.get('mac_address')):
@@ -60,10 +57,11 @@ def update_reading(request):
             else: # Valid form
                 mac_address = request.POST['mac_address']
                 latest_reading = request.POST['latest_reading']
+                latest_reading_pm = request.POST['latest_reading_pm']
                 latest_reading_datetime = datetime.now()
 
                 with open("results.txt", "a") as myfile:
-                    myfile.write(latest_reading_datetime.strftime("%H:%M:%S") + "," + str(latest_reading) + "\n")
+                    myfile.write(latest_reading_datetime.strftime("%H:%M:%S") + "," + str(latest_reading) + "," + str(latest_reading_pm) + "\n")
                     myfile.close()
 
                 # Get the monitor object from models which corresponds to the received JSON
@@ -89,3 +87,4 @@ class CreateRequestValidationForm(forms.Form):
 class UpdateRequestValidationForm(forms.Form):
     mac_address = forms.CharField()
     latest_reading = forms.IntegerField()
+    latest_reading_pm = forms.IntegerField()

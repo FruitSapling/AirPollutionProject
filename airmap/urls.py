@@ -15,6 +15,4 @@ urlpatterns = [
                                              name='data'),
     path('update', update_reading, name="update"),
     path('create', create_monitor, name="create")
-    # path('', views.IndexView, name='home'),
-    # url(r'^data/$', GeoJSONLayerView.as_view(model=Monitor), name='data'),
 ]

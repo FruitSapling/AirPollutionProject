@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cb98515-2afc-4fa9-af8b-cc74e565d4df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/airmap/migrations/0012_monitor_mac_address.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/airmap/migrations/0013_auto_20200314_1656.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/airmap/results.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/airmap/tests/test_forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/airmap/tests/test_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airmap/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/airmap/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airmap/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/airmap/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airmap/templates/airmap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/airmap/templates/airmap/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airmap/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/airmap/tests/test_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airmap/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/airmap/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airmap/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/airmap/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +186,9 @@
       <workItem from="1583085057468" duration="1553000" />
       <workItem from="1583689381648" duration="2724000" />
       <workItem from="1583928029192" duration="7604000" />
-      <workItem from="1584346403691" duration="2717000" />
+      <workItem from="1584346403691" duration="3418000" />
+      <workItem from="1585839950093" duration="483000" />
+      <workItem from="1587743455642" duration="280000" />
     </task>
     <servers />
   </component>
@@ -225,10 +219,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="104" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1580828482185" />
-    <state x="407" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1584367825404">
+    <state x="407" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1587743455775">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="407" y="244" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1584367825404" />
+    <state x="407" y="244" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1587743455775" />
     <state x="582" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584620890856">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
